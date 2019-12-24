@@ -43,13 +43,15 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="{{route('home', ['locale' => 'en'])}}" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="{{route('about_us', ['en'])}}" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Practice Areas</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Attorneys</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Case Studies</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item active"><a href="{{route('home', ['locale' => 'en'])}}" class="nav-link">@lang('header.home')</a></li>
+                <li class="nav-item"><a href="{{route('about_us', ['en'])}}" class="nav-link">@lang('header.about')</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">@lang('header.our_services')</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">@lang('header.attorneys')</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">@lang('header.news')</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">@lang('header.blog')</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">@lang('header.vacancies')</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">@lang('header.trainings')</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">@lang('header.contact')</a></li>
             </ul>
         </div>
     </div>

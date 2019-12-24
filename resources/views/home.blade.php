@@ -3,7 +3,7 @@
 @section('content')
 
 <section class="home-slider js-fullheight owl-carousel">
-    <div class="slider-item js-fullheight" style="background-image:url({{asset("images/bg_1.jpg")}});">
+    <div class="slider-item js-fullheight" style="background-image:url({{asset("images/slider_1.jpg")}});">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="slider-item js-fullheight" style="background-image:url({{asset("images/bg_2.jpg")}});">
+    <div class="slider-item js-fullheight" style="background-image:url({{asset("images/slider_4.jpg")}});">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
@@ -352,38 +352,38 @@
     </div>
 </section>
 
-<section class="ftco-section bg-primary">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section ftco-animate text-center">
-                <span class="subheading">Working Process</span>
-                <h2 class="mb-4">Our Working Way</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in</p>
-            </div>
-        </div>
-        <div class="row steps d-flex">
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="step d-flex align-self-stretch">
-                    <span>#01</span>
-                    <h3>Analyzing Case</h3>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="step d-flex align-self-stretch">
-                    <span>#02</span>
-                    <h3>Research &amp; Investigation</h3>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="step d-flex align-self-stretch">
-                    <span>#03</span>
-                    <h3>Court of Law Success</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<section class="ftco-section bg-primary">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row justify-content-center mb-5 pb-3">--}}
+{{--            <div class="col-md-7 heading-section ftco-animate text-center">--}}
+{{--                <span class="subheading">Working Process</span>--}}
+{{--                <h2 class="mb-4">Our Working Way</h2>--}}
+{{--                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live--}}
+{{--                    the blind texts. Separated they live in</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="row steps d-flex">--}}
+{{--            <div class="col-md-4 d-flex ftco-animate">--}}
+{{--                <div class="step d-flex align-self-stretch">--}}
+{{--                    <span>#01</span>--}}
+{{--                    <h3>Analyzing Case</h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-4 d-flex ftco-animate">--}}
+{{--                <div class="step d-flex align-self-stretch">--}}
+{{--                    <span>#02</span>--}}
+{{--                    <h3>Research &amp; Investigation</h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-4 d-flex ftco-animate">--}}
+{{--                <div class="step d-flex align-self-stretch">--}}
+{{--                    <span>#03</span>--}}
+{{--                    <h3>Court of Law Success</h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 
 <section class="ftco-section mt-5">
     <div class="container">
@@ -547,16 +547,14 @@
                 </div>
                 <div class="pl-md-5 ml-md-5">
                     <div class="info-contact mb-5">
-                        <p><span>Phone:</span> <span>(00) 123 - 456 - 789</span></p>
-                        <p><span>Fax:</span> <span>(00) 123 - 456 - 789</span></p>
-                        <p><span>E-Mail:</span> <span><a href="#">info@emial.com</a></span></p>
+                        <p><span>Phone:</span> <span>+20 102 088 9506</span></p>
+                        <p><span>E-Mail:</span> <span><a href="#">info@shouman-lawfirm.com</a></span></p>
                     </div>
                     <div class="info-contact mb-5">
                         <h3>Address Information</h3>
-                        <p><span>Address</span> <span> 203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        <p><span>Address</span> <span>@lang('footer.address')</span>
                         </p>
-                        <p><span>Fax:</span> <span>(00) 123 - 456 - 789</span></p>
-                        <p><span>E-Mail:</span> <span><a href="#">info@emial.com</a></span></p>
+                        <p><span>E-Mail:</span> <span><a href="#">info@shouman-lawfirm.com</a></span></p>
                     </div>
                 </div>
             </div>
