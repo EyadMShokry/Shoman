@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
 
     <link rel="stylesheet" href="{{asset("css/open-iconic-bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{asset("css/animate.css")}}">
@@ -22,7 +25,10 @@
 
     <link rel="stylesheet" href="{{asset("css/flaticon.css")}}">
     <link rel="stylesheet" href="{{asset("css/icomoon.css")}}">
+{{--    <link rel="stylesheet" href="{{asset("css/whisper_style.css")}}">--}}
     <link rel="stylesheet" href="{{asset("css/style.css")}}">
+
+
 </head>
 <!-- loader -->
 <div id="ftco-loader" class="show fullscreen">
@@ -52,6 +58,7 @@
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.vacancies')</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.trainings')</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.contact')</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">@lang('header.login')</a></li>
             </ul>
         </div>
     </div>

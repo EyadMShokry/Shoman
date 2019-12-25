@@ -18,4 +18,5 @@ return [
     'vacancies' => 'Vacancies',
     'trainings' => 'Trainings',
     'contact' => 'Contact',
+    'login' => 'login',
 ];

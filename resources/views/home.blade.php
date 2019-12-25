@@ -9,11 +9,8 @@
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
                  data-scrollax-parent="true">
                 <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Attorneys Fighting
-                        For Your Freedom</h1>
-                    <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river named Duden flows
-                        by their place and supplies it with the necessary regelialia. It is a paradisematic country, in
-                        which roasted parts of sentences fly into your mouth.</p>
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">@lang('slider.title1')</h1>
+                    <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">@lang('slider.desc1')</p>
                     <p><a href="#" class="btn btn-white btn-outline-white px-4 py-3 mt-3" data-toggle="modal"
                           data-target="#modalRequest">Make an Appointment</a></p>
                 </div>
@@ -27,11 +24,8 @@
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
                  data-scrollax-parent="true">
                 <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We are specialist
-                        in legal Criminal &amp; Business Law</h1>
-                    <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river named Duden flows
-                        by their place and supplies it with the necessary regelialia. It is a paradisematic country, in
-                        which roasted parts of sentences fly into your mouth.</p>
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">@lang('slider.title2')</h1>
+                    <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">@lang('slider.desc2')</p>
                     <p><a href="#" class="btn btn-white btn-outline-white px-4 py-3 mt-3" data-toggle="modal"
                           data-target="#modalRequest">Make an Appointment</a></p>
                 </div>
@@ -48,10 +42,13 @@
                     <h3>Request A Quote</h3>
                     <div class="wrap">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email Address">
+                            <input type="text" class="form-control" placeholder="Full Name">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone Number">
                         </div>
                         <div class="form-group">
                             <textarea name="" id="" cols="30" rows="7" class="form-control"
@@ -68,51 +65,59 @@
                     <div class="col-lg-6 d-flex align-self-stretch ftco-animate">
                         <div class="media block-6 services d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="flaticon-family-room"></span>
-                            </div>
-                            <div class="media-body pl-4">
-                                <h3 class="heading">Family Law</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                    unorthographic.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services d-flex">
-                            <div class="icon d-flex justify-content-center align-items-center">
                                 <span class="flaticon-bar-chart"></span>
                             </div>
                             <div class="media-body pl-4">
-                                <h3 class="heading">Business Law</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                    unorthographic.</p>
+                                <h3 class="heading">@lang('home.package1')</h3>
+                                <p>@lang('home.desc1')</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex align-self-stretch ftco-animate">
                         <div class="media block-6 services d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="flaticon-medicine"></span>
+                                <span class="flaticon-balance"></span>
                             </div>
                             <div class="media-body pl-4">
-                                <h3 class="heading">Drug Control Law</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                    unorthographic.</p>
+                                <h3 class="heading">@lang('home.package2')</h3>
+                                <p>@lang('home.desc2')</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex align-self-stretch ftco-animate">
                         <div class="media block-6 services d-flex">
                             <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="flaticon-prison"></span>
+                                <span class="flaticon-balance"></span>
                             </div>
                             <div class="media-body pl-4">
-                                <h3 class="heading">Criminal Law</h3>
-                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                                    unorthographic.</p>
+                                <h3 class="heading">@lang('home.package3')</h3>
+                                <p>@lang('home.desc3')</p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-6 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services d-flex">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-balance"></span>
+                            </div>
+                            <div class="media-body pl-4">
+                                <h3 class="heading">@lang('home.package4')</h3>
+                                <p>@lang('home.desc4')</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services d-flex">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-balance"></span>
+                            </div>
+                            <div class="media-body pl-4">
+                                <h3 class="heading">@lang('home.package5')</h3>
+                                <p>@lang('home.desc5')</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -123,8 +128,8 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-                 style="background-image: url({{asset("images/about.jpg")}});">
-                <a href="https://vimeo.com/45830194"
+                 style="background-image: url({{asset("images/shoman_about.jpg")}});">
+                <a style="opacity: 0.75", onmouseover="this.style.opacity = 1.0", onmouseout="this.style.opacity = 0.75" href="{{asset("images/ShoUman-Law-Firm-.mp4")}}"
                    class="icon popup-vimeo d-flex justify-content-center align-items-center">
                     <span class="icon-play"></span>
                 </a>
@@ -212,13 +217,13 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center order-md-last"
-                 style="background-image: url({{asset("images/about-2.jpg")}});">
+                 style="background-image: url({{asset("images/shoman_help2.jpg")}});">
             </div>
             <div class="col-md-7 wrap-about ftco-animate">
                 <div class="heading-section mb-5 pl-md-5">
                     <div class="pr-md-5 mr-md-5 text-md-right">
-                        <span class="subheading">Company Help Intro</span>
-                        <h2 class="mb-4">The People We Help</h2>
+                        <span class="subheading">@lang('home.other_services')</span>
+                        <h2 class="mb-4">@lang('home.we_can_help')</h2>
                     </div>
                 </div>
                 <div class="pr-md-5 pl-md-5 mr-md-5 mb-5">
@@ -227,7 +232,7 @@
                             <span class="flaticon-balance"></span>
                         </div>
                         <div class="media-body pr-4 order-md-first text-md-right">
-                            <h3 class="heading">Fight for Justice</h3>
+                            <h3 class="heading">@lang('home.real_estate')</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
                                 unorthographic.</p>
                         </div>
@@ -237,7 +242,7 @@
                             <span class="flaticon-balance"></span>
                         </div>
                         <div class="media-body pr-4 order-md-first text-md-right">
-                            <h3 class="heading">Best Case Strategy</h3>
+                            <h3 class="heading">@lang('home.establishing_ompanies')</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
                                 unorthographic.</p>
                         </div>
@@ -247,7 +252,17 @@
                             <span class="flaticon-balance"></span>
                         </div>
                         <div class="media-body pr-4 order-md-first text-md-right">
-                            <h3 class="heading">Experience Attorneys</h3>
+                            <h3 class="heading">@lang('home.trademarks')</h3>
+                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                                unorthographic.</p>
+                        </div>
+                    </div>
+                    <div class="services-wrap d-flex">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <span class="flaticon-balance"></span>
+                        </div>
+                        <div class="media-body pr-4 order-md-first text-md-right">
+                            <h3 class="heading">@lang('home.patents')</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
                                 unorthographic.</p>
                         </div>
@@ -257,6 +272,102 @@
         </div>
     </div>
 </section>
+
+<br>
+
+{{--<section class="ftco-section bg-light">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row justify-content-center mb-5 pb-3">--}}
+{{--            <div class="col-md-7 text-center heading-section ftco-animate">--}}
+{{--                <span class="subheading">Practice Areas</span>--}}
+{{--                <h2 class="mb-4">Practice Areas</h2>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="row d-flex justify-content-center">--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-family"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Family Law</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-auction"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Business Law</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-shield"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Insurance Law</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-handcuffs"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Criminal Law</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-house"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Property Law</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-employee"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Employment Law</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-fire"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Fire Accident</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-money"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Financial Law</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-medicine"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Drug Offenses</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-md-3 col-lg-2 text-center">--}}
+{{--                <div class="practice-area ftco-animate">--}}
+{{--                    <div class="icon d-flex justify-content-center align-items-center">--}}
+{{--                        <span class="flaticon-handcuffs"></span>--}}
+{{--                    </div>--}}
+{{--                    <h3><a href="#">Sexual Offenses</a></h3>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
+
 
 <section class="ftco-section testimony-section">
     <div class="container">
@@ -583,21 +694,10 @@
                         <label for="appointment_email" class="text-black">Email</label>
                         <input type="text" class="form-control" id="appointment_email">
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="appointment_date" class="text-black">Date</label>
-                                <input type="text" class="form-control" id="appointment_date">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="appointment_time" class="text-black">Time</label>
-                                <input type="text" class="form-control" id="appointment_time">
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="appointment_phone" class="text-black">Phone Number</label>
+                        <input type="text" class="form-control" id="appointment_email">
                     </div>
-
 
                     <div class="form-group">
                         <label for="appointment_message" class="text-black">Message</label>
