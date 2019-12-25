@@ -13,7 +13,7 @@ return [
     'about' => 'About',
     'our_services' => 'Services',
     'attorneys' => 'Attorneys',
-    'news' => 'News',
+    'case_studies' => 'Cases',
     'blog' => 'Blog',
     'vacancies' => 'Vacancies',
     'trainings' => 'Trainings',

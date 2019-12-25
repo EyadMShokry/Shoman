@@ -51,13 +51,13 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="{{route('home', ['locale' => 'en'])}}" class="nav-link">@lang('header.home')</a></li>
                 <li class="nav-item"><a href="{{route('about_us', ['en'])}}" class="nav-link">@lang('header.about')</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">@lang('header.our_services')</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">@lang('header.attorneys')</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">@lang('header.news')</a></li>
+                <li class="nav-item"><a href="{{route('our_services', ['en'])}}" class="nav-link">@lang('header.our_services')</a></li>
+                <li class="nav-item"><a href="{{route('attorneys', ['en'])}}" class="nav-link">@lang('header.attorneys')</a></li>
+                <li class="nav-item"><a href="{{route('case_studies', ['en'])}}" class="nav-link">@lang('header.case_studies')</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.blog')</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.vacancies')</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.trainings')</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">@lang('header.contact')</a></li>
+                <li class="nav-item"><a href="{{route('contact', ['en'])}}" class="nav-link">@lang('header.contact')</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.login')</a></li>
             </ul>
         </div>

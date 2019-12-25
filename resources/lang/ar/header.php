@@ -13,7 +13,7 @@ return [
     'about' => 'معلومات عنا',
     'our_services' => 'خدماتنا',
     'attorneys' => 'المحامين',
-    'news' => 'آخر الأخبار',
+    'case_studies' => 'دراسات الحالة',
     'blog' => 'مقالاتنا',
     'vacancies' => 'فرص العمل',
     'trainings' => 'دورات تدريبية',

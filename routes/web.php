@@ -21,3 +21,23 @@ Route::get('{locale}/about', function ($locale) {
     App::setLocale($locale);
     return view('about');
 })->name('about_us');
+
+Route::get('{locale}/services', function ($locale) {
+    App::setLocale($locale);
+    return view('practice');
+})->name('our_services');
+
+Route::get('{locale}/attorneys', function ($locale) {
+    App::setLocale($locale);
+    return view('attorney');
+})->name('attorneys');
+
+Route::get('{locale}/case_studies', function ($locale) {
+    App::setLocale($locale);
+    return view('blog');
+})->name('case_studies');
+
+Route::get('{locale}/contact', function ($locale) {
+    App::setLocale($locale);
+    return view('contact');
+})->name('contact');

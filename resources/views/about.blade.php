@@ -1,8 +1,9 @@
 @extends('layouts.master')
 @section('title', @trans('header.company_name'))
 @section('content')
+
 <section class="home-slider js-fullheight owl-carousel">
-    <div class="slider-item js-fullheight" style="background-image:url(images/bg_1.jpg);">
+    <div class="slider-item js-fullheight" style="background-image:url({{asset("images/bg_1.jpg")}});">
         <div class="overlay"></div>
         <div class="container">
             <div class="row slider-text justify-content-center align-items-center">
@@ -23,7 +24,7 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-                 style="background-image: url(images/about.jpg);">
+                 style="background-image: url({{asset("images/about.jpg")}});">
                 <a href="https://vimeo.com/45830194"
                    class="icon popup-vimeo d-flex justify-content-center align-items-center">
                     <span class="icon-play"></span>
@@ -55,7 +56,7 @@
 </section>
 
 
-<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);"
+<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url({{asset("images/bg_3.jpg")}});"
          data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row d-md-flex align-items-center">
@@ -111,7 +112,7 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center order-md-last"
-                 style="background-image: url(images/about-2.jpg);">
+                 style="background-image: url({{asset("images/about-2.jpg")}});">
             </div>
             <div class="col-md-7 wrap-about ftco-animate">
                 <div class="heading-section mb-5 pl-md-5">
@@ -172,7 +173,7 @@
                 <div class="carousel-testimony owl-carousel">
                     <div class="item">
                         <div class="testimony-wrap p-4 pb-5">
-                            <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
+                            <div class="user-img mb-5" style="background-image: url({{asset("images/person_1.jpg")}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -187,7 +188,7 @@
                     </div>
                     <div class="item">
                         <div class="testimony-wrap p-4 pb-5">
-                            <div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
+                            <div class="user-img mb-5" style="background-image: url({{asset("images/person_2.jpg")}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -202,7 +203,7 @@
                     </div>
                     <div class="item">
                         <div class="testimony-wrap p-4 pb-5">
-                            <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
+                            <div class="user-img mb-5" style="background-image: url({{asset("images/person_3.jpg")}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -217,7 +218,7 @@
                     </div>
                     <div class="item">
                         <div class="testimony-wrap p-4 pb-5">
-                            <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
+                            <div class="user-img mb-5" style="background-image: url({{asset("images/person_1.jpg")}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -232,7 +233,7 @@
                     </div>
                     <div class="item">
                         <div class="testimony-wrap p-4 pb-5">
-                            <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
+                            <div class="user-img mb-5" style="background-image: url({{asset("images/person_1.jpg")}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
