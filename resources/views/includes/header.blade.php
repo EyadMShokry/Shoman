@@ -49,7 +49,7 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="{{route('home', ['locale' => 'en'])}}" class="nav-link">@lang('header.home')</a></li>
+                <li class="nav-item active"><a href="{{route('home', ['lang' => 'en'])}}" class="nav-link">@lang('header.home')</a></li>
                 <li class="nav-item"><a href="{{route('about_us', ['en'])}}" class="nav-link">@lang('header.about')</a></li>
                 <li class="nav-item"><a href="{{route('our_services', ['en'])}}" class="nav-link">@lang('header.our_services')</a></li>
                 <li class="nav-item"><a href="{{route('attorneys', ['en'])}}" class="nav-link">@lang('header.attorneys')</a></li>
