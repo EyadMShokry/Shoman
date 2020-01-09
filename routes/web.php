@@ -11,10 +11,7 @@
 |
 */
 Route::prefix('{lang}')->group(function () {
-    Route::get('/', function () {
-        return view('home');
-    })->name('home');
-
+    Route::get('/','Home@index')->name('home');
 
     Route::get('about', function () {
         return view('about');
@@ -44,3 +41,4 @@ Route::prefix('{lang}')->group(function () {
         Route::resource('testimonials', 'adminpanel\Testimonials');
     });
 });
+

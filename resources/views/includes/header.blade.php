@@ -58,7 +58,6 @@
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.vacancies')</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">@lang('header.trainings')</a></li>
                 <li class="nav-item"><a href="{{route('contact', ['en'])}}" class="nav-link">@lang('header.contact')</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">@lang('header.login')</a></li>
             </ul>
         </div>
     </div>
