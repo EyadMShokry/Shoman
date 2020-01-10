@@ -12,17 +12,18 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
-    'testimonials' => [
-        'title' => 'Testimonial|Testimonials',
-        'list' => 'List Testimonials',
-        'add' => 'Add a Testimonial',
-        'name' => 'Name',
-        'position' => 'Position',
-        'quote' => 'Quote',
-        'image' => 'Photo',
-    ],
-    'company_name' => 'ShoUman-Group',
-    'title' => 'Admin Panel',
+    'form_action' => array(
+        'submit' => 'Submit',
+        'cancel' => 'Cancel',
+        'edit' => 'Edit',
+        'delete' => 'Delete',
+        'save' => 'Save',
+    ),
+    'form_labels' => array(
+        'image' => 'Image',
+        'choose_file' => 'Choose file',
+        'choose_image' => 'Choose image',
+    ),
+    'home' => 'Home',
 
 ];

@@ -6,8 +6,8 @@
 
 <!-- Main Footer -->
 <footer class="main-footer">
-{{--    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>--}}
-{{--    All rights reserved.--}}
+    {{--    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>--}}
+    {{--    All rights reserved.--}}
     <strong>ShoUman-Group</strong>
     <div class="float-right d-none d-sm-inline-block">
         <b>Version</b> 3.0.1
@@ -37,9 +37,6 @@
 <script src="{{asset('packages/adminlte/plugins/jquery-mapael/maps/usa_states.min.js')}}"></script>
 <!-- ChartJS -->
 <script src="{{asset('packages/adminlte/plugins/chart.js/Chart.min.js')}}"></script>
-
-<!-- PAGE SCRIPTS -->
-<script src="{{asset('packages/adminlte/dist/js/pages/dashboard2.js')}}"></script>
 <!-- DataTables -->
 <script src="{{asset('packages/adminlte/plugins/datatables/jquery.dataTables.js')}}"></script>
 <script src="{{asset('packages/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
@@ -47,5 +44,13 @@
 <script>
     $(function () {
         $(".datatable").DataTable();
+        // Change input file name when file is chosen (Required in bootstrap v4)
+        $(document).on('change', '.custom-file-input', function (event) {
+            $(this).next('.custom-file-label').html(event.target.files[0].name);
+        });
+        $('#flash-overlay-modal').modal();
+        $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
     });
 </script>
+<!-- page specific scripts -->
+@yield('pagespecificscripts')

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\adminpanel;
 
 use App\Http\Controllers\Controller;
 use App\Testimonial;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreTestimonials;
 
 class Testimonials extends Controller
 {
@@ -25,24 +25,34 @@ class Testimonials extends Controller
      */
     public function create()
     {
-        //
+        return view('adminpanel/testimonials/manage');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreTestimonials $request)
     {
-        //
+        // validation passed, store data into database
+        $data = $request->all();
+        // Upload Image
+        $image_name = uploadImage($data['image'], 'adminpanel/testimonials');
+        // Set uploaded image name
+        $data['image'] = $image_name;
+        // Create a testimonial in database
+        Testimonial::create($data);
+        $message = trans('adminpanel/messages.success.added', ['type' => trans_choice('adminpanel/dashboard.testimonials.title', 1)]);
+        flash($message)->success();
+        return redirect('en/admin/testimonials');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Testimonial  $testimonial
+     * @param \App\Testimonial $testimonial
      * @return \Illuminate\Http\Response
      */
     public function show(Testimonial $testimonial)
@@ -53,7 +63,7 @@ class Testimonials extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Testimonial  $testimonial
+     * @param \App\Testimonial $testimonial
      * @return \Illuminate\Http\Response
      */
     public function edit(Testimonial $testimonial)
@@ -64,11 +74,11 @@ class Testimonials extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Testimonial  $testimonial
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Testimonial $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Testimonial $testimonial)
+    public function update(StoreTestimonials $request, Testimonial $testimonial)
     {
         //
     }
@@ -76,7 +86,7 @@ class Testimonials extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Testimonial  $testimonial
+     * @param \App\Testimonial $testimonial
      * @return \Illuminate\Http\Response
      */
     public function destroy(Testimonial $testimonial)

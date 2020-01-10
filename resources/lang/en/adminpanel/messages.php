@@ -12,17 +12,14 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
-    'testimonials' => [
-        'title' => 'Testimonial|Testimonials',
-        'list' => 'List Testimonials',
-        'add' => 'Add a Testimonial',
-        'name' => 'Name',
-        'position' => 'Position',
-        'quote' => 'Quote',
-        'image' => 'Photo',
+    'success' => [
+        'added' => ':type added!',
+        'updated' => ':type updated!',
+        'deleted' => ':type deleted!',
+        'duplicated' => ':type duplicated!',
+        'imported' => ':type imported!',
+        'enabled' => ':type enabled!',
+        'disabled' => ':type disabled!',
     ],
-    'company_name' => 'ShoUman-Group',
-    'title' => 'Admin Panel',
 
 ];

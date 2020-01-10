@@ -892,3 +892,8 @@
     </div>
     <!-- /.content-wrapper -->
 @endsection
+
+@section('pagespecificscripts')
+    <!-- PAGE SCRIPTS -->
+    <script src="{{asset('packages/adminlte/dist/js/pages/dashboard2.js')}}"></script>
+@endsection

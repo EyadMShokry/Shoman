@@ -12,17 +12,10 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
-    'testimonials' => [
-        'title' => 'Testimonial|Testimonials',
-        'list' => 'List Testimonials',
-        'add' => 'Add a Testimonial',
-        'name' => 'Name',
-        'position' => 'Position',
-        'quote' => 'Quote',
-        'image' => 'Photo',
-    ],
-    'company_name' => 'ShoUman-Group',
-    'title' => 'Admin Panel',
+    'label_name' => 'Name',
+    'label_position' => 'Position',
+    'label_quote' => 'Quote',
+    'placeholder_name' => 'Enter a name',
+    'placeholder_position' => 'Enter a position',
 
 ];
