@@ -11,7 +11,7 @@
 |
 */
 Route::prefix('{lang}')->group(function () {
-    Route::get('/','Home@index')->name('home');
+    Route::get('/', 'Home@index')->name('home');
 
     Route::get('about', function () {
         return view('about');
@@ -42,3 +42,9 @@ Route::prefix('{lang}')->group(function () {
     });
 });
 
+// Ajax Controller Routes
+
+Route::prefix('ajax/')->group(function () {
+    Route::post('toggleActive', 'AjaxController@actions_toggle');
+    Route::post('delete', 'AjaxController@actions_delete');
+});

@@ -23,12 +23,16 @@ class StoreTestimonials extends FormRequest
      */
     public function rules()
     {
-        return [
+        $method = $this->method();
+        $rules = array(
             'name' => 'required|max:191',
             'position' => 'required|max:191',
             'quote' => 'required|max:191',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ];
+        );
+        if ($method == 'post') {
+            $rules['image'] = 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048';
+        }
+        return $rules;
     }
 
     /**

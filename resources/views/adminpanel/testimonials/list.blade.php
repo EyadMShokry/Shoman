@@ -32,24 +32,51 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table class="table table-bordered table-hover datatable">
+                            <table id="testimonials" class="table table-bordered table-hover datatable">
                                 <thead>
                                 <tr>
                                     <th>@lang('adminpanel/dashboard.testimonials.name')</th>
                                     <th>@lang('adminpanel/dashboard.testimonials.position')</th>
                                     <th>@lang('adminpanel/dashboard.testimonials.quote')</th>
                                     <th>@lang('adminpanel/dashboard.testimonials.image')</th>
+                                    <th>@lang('adminpanel/general.actions')</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($testimonials as $testimonial)
-                                    <tr>
+                                    @if ($testimonial->active)
+                                        @php
+                                            $toggle_status = 0;
+                                            $src_icon = asset('icons/action_active.gif');
+                                        @endphp
+                                    @else
+                                        @php
+                                            $toggle_status = 1;
+                                            $src_icon = asset('icons/action_inactive.gif');
+                                        @endphp
+                                    @endif
+                                    <tr id="item-{{$testimonial->id}}">
                                         <td>{{$testimonial->name}}</td>
                                         <td>{{$testimonial->position}}</td>
                                         <td>{{$testimonial->quote}}</td>
                                         <td><img width="100px" class="img-fluid rounded-circle"
                                                  alt="{{$testimonial->name}}"
                                                  src="{{asset('images/adminpanel/testimonials/' . $testimonial->image)}}"/>
+                                        </td>
+                                        <td style="text-align:center">
+                                            <a href="{{ url(session('locale') . '/' . 'admin/testimonials/' . $testimonial->id . '/edit')}}"
+                                               title="{{trans('adminpanel/general.form_action.edit')}}"><img
+                                                        src="{{asset('icons/action_edit.gif')}}"
+                                                        alt="{{trans('adminpanel/general.form_action.edit')}}"></a>
+                                            <a id="status-{{$testimonial->id}}"
+                                               href="javascript:ToggleActive('{{$toggle_status}}', '{{$testimonial->id}}', 'testimonials')"
+                                               title="{{trans('adminpanel/general.table_action.toggle')}}"><img
+                                                        src="{{$src_icon}}"
+                                                        alt="{{trans('adminpanel/general.table_action.toggle')}}"></a>
+                                            <a href="javascript:DeleteItem('{{$testimonial->id}}', 'testimonials', 'images/adminpanel/testimonials/{{$testimonial->image}}')"
+                                               title="{{trans('adminpanel/general.form_action.delete')}}"><img
+                                                        src="{{asset('icons/action_delete.gif')}}"
+                                                        alt="{{trans('adminpanel/general.form_action.delete')}}"></a>
                                         </td>
                                     </tr>
                                 @endforeach

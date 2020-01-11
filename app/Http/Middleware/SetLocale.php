@@ -25,6 +25,7 @@ class SetLocale
         if (session()->has('locale')) {
             app()->setLocale(session('locale'));
         }
+        $request->route()->forgetParameter('lang');
         return $next($request);
     }
 }

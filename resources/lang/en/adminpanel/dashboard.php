@@ -17,6 +17,7 @@ return [
         'title' => 'Testimonial|Testimonials',
         'list' => 'List Testimonials',
         'add' => 'Add a Testimonial',
+        'edit' => 'Edit a Testimonial',
         'name' => 'Name',
         'position' => 'Position',
         'quote' => 'Quote',

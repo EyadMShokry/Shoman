@@ -4,7 +4,9 @@ namespace App\Http\Controllers\adminpanel;
 
 use App\Http\Controllers\Controller;
 use App\Testimonial;
-use App\Http\Requests\StoreTestimonials;
+use App\Http\Requests\StoreTestimonials as Request;
+use File;
+
 
 class Testimonials extends Controller
 {
@@ -25,7 +27,15 @@ class Testimonials extends Controller
      */
     public function create()
     {
-        return view('adminpanel/testimonials/manage');
+        $testimonial = array(
+            'id' => '',
+            'name' => '',
+            'position' => '',
+            'quote' => '',
+            'image' => '',
+        );
+        $formAction = session('locale') . '/' . 'admin/testimonials';
+        return view('adminpanel/testimonials/manage', compact('testimonial', 'formAction', 'method'));
     }
 
     /**
@@ -34,7 +44,7 @@ class Testimonials extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreTestimonials $request)
+    public function store(Request $request)
     {
         // validation passed, store data into database
         $data = $request->all();
@@ -68,7 +78,8 @@ class Testimonials extends Controller
      */
     public function edit(Testimonial $testimonial)
     {
-        //
+        $formAction = session('locale') . '/' . 'admin/testimonials/' . $testimonial['id'];
+        return view('adminpanel/testimonials/manage', compact('testimonial', 'formAction', 'method'));
     }
 
     /**
@@ -78,9 +89,27 @@ class Testimonials extends Controller
      * @param \App\Testimonial $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function update(StoreTestimonials $request, Testimonial $testimonial)
+    public function update(Request $request, Testimonial $testimonial)
     {
-        //
+        // validation passed, store data into database
+        $data = $request->all();
+        // Remove old image and upload new
+        if (isset($data['image'])) {
+            // Retrieve testimonial object before update
+            $old_testimonial = Testimonial::find($testimonial->id);
+            // Remove old image
+            File::delete('images/adminpanel/testimonials/' . $old_testimonial['image']);
+            // Upload Image
+            $testimonial->image = uploadImage($data['image'], 'adminpanel/testimonials');
+        }
+        // Update information
+        $testimonial->name = $request['name'];
+        $testimonial->quote = $request['quote'];
+        $testimonial->position = $request['position'];
+        $testimonial->save();
+        $message = trans('adminpanel/messages.success.updated', ['type' => trans_choice('adminpanel/dashboard.testimonials.title', 1)]);
+        flash($message)->success();
+        return redirect('en/admin/testimonials');
     }
 
     /**
