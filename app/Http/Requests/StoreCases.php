@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreTestimonials extends FormRequest
+class StoreCases extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,37 +26,12 @@ class StoreTestimonials extends FormRequest
         $method = $this->method();
         $rules = array(
             'name' => 'required|max:191',
-            'position' => 'required|max:191',
-            'quote' => 'required|max:191',
+            'date' => 'required|date',
+            'description' => 'required|max:191',
         );
         if ($method == 'POST') {
             $rules['image'] = 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048';
         }
         return $rules;
-    }
-
-    /**
-     * Get the error messages for the defined validation rules.
-     *
-     * @return array
-     */
-    public function messages()
-    {
-        return [
-            /*'title.required' => 'A title is required',
-            'body.required' => 'A message is required',*/
-        ];
-    }
-
-    /**
-     * Get custom attributes for validator errors.
-     *
-     * @return array
-     */
-    public function attributes()
-    {
-        return [
-            //'email' => 'email address',
-        ];
     }
 }

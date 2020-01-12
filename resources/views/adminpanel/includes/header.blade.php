@@ -199,6 +199,38 @@
                         </ul>
                     </li>
                 </ul>
+
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item has-treeview menu-open">
+                        <a href="#" class="nav-link @if($route == 'adminpanel_dashboard') active @endif">
+                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <p>
+                                {{trans_choice('adminpanel/dashboard.cases.title', 2)}}
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ url('en/admin/cases/create') }}"
+                                   class="nav-link @if($route == 'cases.create') active @endif">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>@lang('adminpanel/dashboard.cases.add')</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{url('en/admin/cases')}}"
+                                   class="nav-link @if($route == 'cases.index') active @endif">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>@lang('adminpanel/dashboard.cases.list')</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
             </nav>
             <!-- /.sidebar-menu -->
         </div>

@@ -39,6 +39,7 @@ Route::prefix('{lang}')->group(function () {
             return view('adminpanel/dashboard');
         })->name('adminpanel_dashboard');
         Route::resource('testimonials', 'adminpanel\Testimonials');
+        Route::resource('cases', 'adminpanel\Cases');
     });
 });
 

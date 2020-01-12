@@ -23,6 +23,16 @@ return [
         'quote' => 'Quote',
         'image' => 'Photo',
     ],
+    'cases' => [
+        'title' => 'Case|Cases',
+        'list' => 'List Cases',
+        'add' => 'Add a Case',
+        'edit' => 'Edit a Case',
+        'name' => 'Name',
+        'date' => 'Date',
+        'description' => 'Description',
+        'image' => 'Photo',
+    ],
     'company_name' => 'ShoUman-Group',
     'title' => 'Admin Panel',
 
