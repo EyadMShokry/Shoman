@@ -35,7 +35,7 @@ class Testimonials extends Controller
             'image' => '',
         );
         $formAction = session('locale') . '/' . 'admin/testimonials';
-        return view('adminpanel/testimonials/manage', compact('testimonial', 'formAction', 'method'));
+        return view('adminpanel/testimonials/manage', compact('testimonial', 'formAction'));
     }
 
     /**
@@ -79,7 +79,7 @@ class Testimonials extends Controller
     public function edit(Testimonial $testimonial)
     {
         $formAction = session('locale') . '/' . 'admin/testimonials/' . $testimonial['id'];
-        return view('adminpanel/testimonials/manage', compact('testimonial', 'formAction', 'method'));
+        return view('adminpanel/testimonials/manage', compact('testimonial', 'formAction'));
     }
 
     /**
